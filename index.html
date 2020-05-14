@@ -15,7 +15,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
  -->
-
+ 
 </head>
 
 <body>
@@ -43,13 +43,13 @@
           <option value="male">Male</option>
           <option value="female">Female</option>
         </select>
-      </div> 
+      </div>
 
       <div id="birthdate"><br>
         <label for="bithdate">Date of Birth:</label><br>
         <input type="date" name="birthdate" size="12" maxlength="12">
       </div>
-  
+
       <div id="regione"><br>
         <label for="region">Region:</label><br>
         <select name="region">
@@ -86,43 +86,52 @@
         <label for="phone">Phone Number:</label><br>
         <input type="text" name="phone" size="15" maxlength="15">
       </div>
-  
+
       <div id="additional-req"><br>
         <label for="additional-req">Additional Requests:</label><br>
         <textarea name="additional-req" cols="60" rows="12"></textarea>
       </div>
 
-      
-      
-        <br>
-        <br>
-        What do you prefer?:
 
+      <div id="preferences"><br>
+        <fieldset>
+          <legend>Which one(s) do you prefer the most?</legend>
 
-        <br>
-        <input type="checkbox" id="accept" checked> Baseball <input type="checkbox" id="accept" checked> Tennis <input
-          type="checkbox" id="accept" checked> Football
-        <br>
-        <input type="checkbox" id="accept" checked> Basket <input type="checkbox" id="accept" checked> Skii <input
-          type="checkbox" id="accept" checked> Coding
+          <input type="checkbox" id="baseball">
+          <label for="baseball">Baseball</label>
+          
+          <input type="checkbox" id="tennis">
+          <label for="tennis">Tennis</label>
 
+          <input type="checkbox" id="football">
+          <label for="football">Football</label>
 
-        <br>
-        <br>
+          <input type="checkbox" id="basketball">
+          <label for="basketball">Basketball</label>
 
-        > Send a copy of this form to my e-mail <input type="checkbox" id="accept" checked>
-        <br>
-        > Accept our terms and conditions * <input type="checkbox" id="accept" checked>
-        <br>
-        <br>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+          <input type="checkbox" id="skiing">
+          <label for="skiing">Skiing</label>
 
+          <input type="checkbox" id="coding" checked>
+          <label for="coding">Coding</label>
+
+        </fieldset>
       </div>
 
+      <div id="finalchecks"><br>
+        <input type="checkbox" id="accept#1" checked>
+        <label for="accept#1">Send a copy of this form to my e-mail </label><br>
+      
+        <input type="checkbox" id="accept#2" checked>
+        <label for="accept#2">Accept our terms and conditions * </label>
+      </div>
 
+      <div id="buttons"><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </div>
     </form>
+  </div>
 
 </body>
-
 </html>
