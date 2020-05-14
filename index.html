@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>JS Example</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script type="text/javascript" src="app.js">
+  </script>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ -->
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="title">
+      <h1>Insert your info</h1><br>
+    </div>
+
+    <form action="" method="post" name="register" onSubmit="return checkForm()">
+
+      <div id="name">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" size="30" maxlength="30" required>
+      </div>
+
+      <div id="surname"><br>
+        <label for="surname">Surname:</label><br>
+        <input type="text" name="surname" size="40" maxlength="40" required>
+      </div>
+
+      <div id="gender"><br>
+        <label for="gender">Gender:</label><br>
+        <select name="gender" required>
+          <option value="not-specified" selected>Not Specified</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div> 
+
+      <div id="birthdate"><br>
+        <label for="bithdate">Date of Birth:</label><br>
+        <input type="date" name="birthdate" size="12" maxlength="12">
+      </div>
+  
+      <div id="regione"><br>
+        <label for="region">Region:</label><br>
+        <select name="region">
+          <option value="none" selected></option>
+          <option value="valdaosta">Val d’Aosta</option>
+          <option value="piemonte">Piemonte</option>
+          <option value="liguria">Liguria</option>
+          <option value="lombardia">Lombardia</option>
+          <option value="veneto">Veneto</option>
+          <option value="trentino-altoadige">Trentino Alto Adige</option>
+          <option value="friuli-venezia-giulia">Friuli Venezia-Giulia</option>
+          <option value="emilia-romagna">Emilia-Romagna</option>
+          <option value="toscana">Toscana</option>
+          <option value="marche">Marche</option>
+          <option value="umbria">Umbria</option>
+          <option value="lazio">Lazio</option>
+          <option value="abruzzo">Abruzzo</option>
+          <option value="molise">Molise</option>
+          <option value="campania">Campania</option>
+          <option value="basilicata">Basilicata</option>
+          <option value="puglia">Puglia</option>
+          <option value="calabria">Calabria</option>
+          <option value="sicilia">Sicilia</option>
+          <option value="sardegna">Sardegna</option>
+        </select>
+      </div>
+
+      <div id="email"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" name="email" size="30" maxlength="30">
+      </div>
+
+      <div id="phone"><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="text" name="phone" size="15" maxlength="15">
+      </div>
+  
+      <div id="additional-req"><br>
+        <label for="additional-req">Additional Requests:</label><br>
+        <textarea name="additional-req" cols="60" rows="12"></textarea>
+      </div>
+
+      
+      
+        <br>
+        <br>
+        What do you prefer?:
+
+
+        <br>
+        <input type="checkbox" id="accept" checked> Baseball <input type="checkbox" id="accept" checked> Tennis <input
+          type="checkbox" id="accept" checked> Football
+        <br>
+        <input type="checkbox" id="accept" checked> Basket <input type="checkbox" id="accept" checked> Skii <input
+          type="checkbox" id="accept" checked> Coding
+
+
+        <br>
+        <br>
+
+        > Send a copy of this form to my e-mail <input type="checkbox" id="accept" checked>
+        <br>
+        > Accept our terms and conditions * <input type="checkbox" id="accept" checked>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+      </div>
+
+
+    </form>
+
+</body>
+
+</html>
